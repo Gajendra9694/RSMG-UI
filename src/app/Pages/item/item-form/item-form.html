@@ -1,0 +1,187 @@
+<div class="container mt-4">
+  <!-- Page Title -->
+  <h3 class="text-center fw-bold text-primary mb-1">
+    <i class="bi bi-box"></i> Item Registration
+  </h3>
+
+  <div class="card shadow-sm border-0 mt-3">
+    <div class="card-header bg-primary text-white py-2 d-flex justify-content-between align-items-center">
+      <h6 class="mb-0">
+        <i class="bi bi-info-circle"></i> General Details
+      </h6>
+
+    </div>
+
+<div class="card-body small">
+  <form class="row g-3">
+
+ <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Group</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Motor Battery</option>
+        <option>Hardware Parts</option>
+        <option>Furniture</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Sub Group</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>CEAT</option>
+        <option>MRF</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Sub Sub Group</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Tyre</option>
+        <option>Tube</option>
+      </select>
+    </div>
+
+    <!-- Contact -->
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Name</label>
+      <input type="text" class="form-control form-control-sm" placeholder="item name " />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Name (Hindi)</label>
+      <input type="text" class="form-control form-control-sm" placeholder="item name (hindi)" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Item Code</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Manufacturer Part No</label>
+      <input type="number" class="form-control form-control-sm" placeholder="0" />
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Unit</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Dozen</option>
+        <option>Pair</option>
+      </select>
+    </div>
+
+     <div class="col-md-2">
+      <label class="form-label fw-semibold">Manufactured By</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Ceat</option>
+        <option>Appolo</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Rate</label>
+      <input type="number" class="form-control form-control-sm" placeholder="0.00" />
+    </div>
+
+
+    <!-- Present Address -->
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Other Information </h6>
+<div class="col-md-3">
+  <label class="form-label fw-semibold d-block">Is Active</label>
+  <div class="form-check form-check-inline">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="isActive"
+      id="activeYes"
+      value="true"
+      checked
+    />
+    <label class="form-check-label text-success fw-semibold" for="activeYes">
+      <i class="bi bi-check-circle-fill"></i> Active
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="isActive"
+      id="activeNo"
+      value="false"
+    />
+    <label class="form-check-label text-danger fw-semibold" for="activeNo">
+      <i class="bi bi-x-circle-fill"></i> Inactive
+    </label>
+  </div>
+</div>
+<div class="col-md-3">
+  <label class="form-label fw-semibold d-block">Type(P/C)</label>
+  <div class="form-check form-check-inline">
+    <input
+      class="form-check-input" type="radio"name="isActive" id="activeYes"value="true" checked
+    />
+    <label class="form-check-label text-success fw-semibold" for="activeYes">
+      <i class="bi bi-check-circle-fill"></i> Permanent
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input
+      class="form-check-input" type="radio" name="isActive"id="activeNo" value="false"
+    />
+    <label class="form-check-label text-danger fw-semibold" for="activeNo">
+      <i class="bi bi-x-circle-fill"></i> Consumable
+    </label>
+  </div>
+</div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Ledger No</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>1/1 tyres</option>
+        <option>2/2 tubes</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Ledger Folio No(Jaipur)</label>
+      <input type="number" class="form-control form-control-sm"  />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Bin No(Jaipur)</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Rack No(Jaipur)</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Ledger Folio No(Udaipur)</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Ledger Folio No(Jodhpur)</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+    <!-- Buttons -->
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-sm me-2" style="background-color:#040125; border:none;">
+        <i class="bi bi-check-circle"></i> Save
+      </button>
+      <button type="reset" class="btn btn-danger btn-sm me-2" style="background-color:#720303; border:none;">
+        <i class="bi bi-x-circle"></i> Cancel
+      </button>
+      <button type="button" class="btn btn-secondary btn-sm" (click)="goBack()">
+        <i class="bi bi-arrow-left-square"></i> Back
+      </button>
+    </div>
+
+  </form>
+</div>
+```
+
+  </div>
+</div>

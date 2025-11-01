@@ -1,0 +1,98 @@
+<div class="container mt-4">
+  <div class="card shadow-sm border-0 mt-4">
+
+    <div class="card-header bg-light d-flex align-items-center py-2" style="position: relative;">
+      <h6 class="mb-0 fw-semibold text-primary text-truncate pe-5" style="max-width: 80%;">
+        <i class="bi bi-list-ul"></i> Vehicle Rate Chart List
+      </h6>
+
+      <!-- Add Form button -->
+      <button class="btn btn-primary btn-sm" (click)="goToDeptForm()"
+        style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+    background-color:#090250; color:white; font-size:12px; padding:4px 16px; border:none; border-radius:4px; cursor:pointer;">
+        <i class="bi bi-building"></i> Add VehicleRate
+      </button>
+    </div>
+
+    <!-- Body Section -->
+    <div class="card-body small">
+      <!-- Page Size + Search -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+
+        <!-- Left: Records dropdown -->
+        <div class="d-flex align-items-center">
+          <select id="pageSize" class="form-select form-select-sm w-auto">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <label class="ms-2 mb-0">records</label>
+        </div>
+
+        <!-- Right: Search box -->
+        <div class="input-group input-group-sm shadow-sm" style="max-width: 280px;">
+          <input type="text" id="searchBox" class="form-control border-0" placeholder="Search by dept. name..." />
+          <button class="btn btn-outline-primary" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-sm table-striped align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th>#</th>
+              <th>Category</th>
+              <th>Ledger No.</th>
+              <th>Department Name</th>
+              <th>Department Name (H)</th>
+              <th>Dept Head</th>
+              <th>City</th>
+              <th>District</th>
+              <th>State</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Minister</td>
+              <td>15225</td><td></td>
+              <td>pm rally</td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <button
+                  style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button
+                  style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-end mt-2 gap-2">
+        <button
+          style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+          <i class="bi bi-arrow-left-circle"></i> Previous
+        </button>
+        <button
+          style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+          Next <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

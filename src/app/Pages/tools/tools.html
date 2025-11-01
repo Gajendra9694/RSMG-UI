@@ -1,0 +1,151 @@
+<div class="container mt-4">
+
+  <!-- Page Title -->
+  <h3 class="text-center fw-bold text-primary mb-3">
+    <i class="bi bi-wrench-adjustable-circle"></i> Tools
+  </h3>
+
+  <!-- Card: Form -->
+  <div class="card shadow-sm border-0">
+    <div class="card-header bg-primary text-white py-2">
+      <h6 class="mb-0"><i class="bi bi-wrench-adjustable-circle"></i>Tools Details</h6>
+    </div>
+   <div class="card-body small">
+     <!-- Centered Form -->
+<form class="row g-3 justify-content-center text-center">
+
+
+  <div class="col-md-2">
+    <label class="form-label fw-semibold">Tool Name</label>
+    <input type="text" class="form-control form-control-sm" placeholder="tool name" />
+  </div>
+
+ <!-- Effective Date -->
+        <div class="col-md-2">
+          <label class="form-label fw-semibold">Start Date</label>
+          <input type="date" class="form-control form-control-sm" />
+        </div>
+
+        <!-- Remarks -->
+        <div class="col-md-2">
+          <label class="form-label fw-semibold">Remarks</label>
+          <textarea class="form-control form-control-sm" rows="1"></textarea>
+        </div>
+
+
+  <!-- Buttons -->
+  <div class="col-12 text-center mt-3">
+    <button
+      style="background-color:#0e0230; color:white; font-size:12px; padding:4px 16px; border:none; border-radius:4px; cursor:pointer; margin-right:8px;">
+      <i class="bi bi-save"></i> Save
+    </button>
+    <button type="reset"
+      style="background-color:#720303; color:white; font-size:12px; padding:4px 16px; border:none; border-radius:4px; cursor:pointer;">
+      <i class="bi bi-x-circle"></i> Cancel
+    </button>
+  </div>
+
+</form>
+
+    </div>
+  </div>
+
+  <!-- Table Section -->
+  <div class="card shadow-sm border-0 mt-4">
+    <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+      <h6 class="mb-0 fw-semibold text-primary"><i class="bi bi-list-ul"></i>Tools List</h6>
+
+      <!-- Search box -->
+
+    </div>
+
+    <!-- Page Size -->
+    <div class="card-body small">
+      <!-- Page Size + Search (Same Row) -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+
+        <!-- Left: Records dropdown -->
+        <div class="d-flex align-items-center">
+          <select id="pageSize" class="form-select form-select-sm w-auto">
+            <option value="5"selected>5</option>
+            <option value="10" >10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <label class="ms-2 mb-0">records</label>
+        </div>
+
+        <!-- Right: Search box -->
+        <div class="input-group input-group-sm shadow-sm" style="max-width: 280px;">
+          <input type="text" id="searchBox" class="form-control border-0" placeholder="Search by tool name..." />
+          <button class="btn btn-outline-primary" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+
+      </div>
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-sm table-striped align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th>#</th>
+              <th>Tool Name</th>
+              <th>Start Date</th>
+              <th>Remarks</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Hammer</td>
+              <td>24 sept. 2008</td>
+              <td></td>
+              <td>
+                <button
+                  style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button
+                  style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Screw Driver</td>
+              <td>1 april 2008</td>
+              <td></td>
+              <td>
+                <button
+                  style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button
+                  style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-end mt-2 gap-2">
+        <button
+          style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+          <i class="bi bi-arrow-left-circle"></i> Previous
+        </button>
+        <button
+          style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+          Next <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,333 @@
+<div class="container mt-4">
+  <!-- Page Title -->
+  <h3 class="text-center fw-bold text-primary mb-1">
+    <i class="bi bi-car-front-fill"></i> Vehicle Registration
+  </h3>
+
+  <div class="card shadow-sm border-0 mt-3">
+    <div class="card-header bg-primary text-white py-2 d-flex justify-content-between align-items-center">
+      <h6 class="mb-0">
+        <i class="bi bi-info-circle"></i> General Details
+      </h6>
+
+    </div>
+
+<div class="card-body small">
+  <form class="row g-3">
+
+<!-- General Details -->
+<div class="row align-items-center mb-3">
+
+  <!-- Vehicle Category -->
+  <div class="col-md-10 d-flex align-items-center flex-wrap">
+    <label class="form-label fw-semibold me-3 mb-0">Vehicle Category:</label>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt1" value="1" checked>
+      <label class="form-check-label" for="opt1">RSMG Vehicle</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt2" value="2">
+      <label class="form-check-label" for="opt2">Other Department</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt3" value="3">
+      <label class="form-check-label" for="opt3">Central Pool</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt4" value="4">
+      <label class="form-check-label" for="opt4">Secretariat Pool</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt5" value="5">
+      <label class="form-check-label" for="opt5">Hired</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="optionGroup" id="opt6" value="6">
+      <label class="form-check-label" for="opt6">District Pool</label>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="col-md-2">
+    <label class="form-label fw-semibold mb-1">Location</label>
+    <select class="form-select form-select-sm">
+      <option value="" disabled selected>-- Select One --</option>
+      <option>Jaipur</option>
+      <option>Jodhpur</option>
+      <option>Sikar</option>
+      <option>Churu</option>
+    </select>
+  </div>
+</div>
+
+
+    <!-- Present Address -->
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Vehicle Information</h6>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Registration No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="RJ-00-xx-0000" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Manufacturer</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Hind Motors</option>
+        <option>Mahindra Motors</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Vehicle Type</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>2 wheeler </option>
+        <option>3 wheeler</option>
+        <option>4 wheeler</option>
+        <option>Other</option>
+      </select>
+    </div>
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Vehicle Model</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Bolero</option>
+        <option>Baleno</option>
+        <option>Fortuner</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold"> Horse Power</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold"> Engine No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Chassis NO.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Tyre Size</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Fuel Type</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>CNG</option>
+        <option>Other</option>
+      </select>
+    </div>
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Tank Capacity</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+     <div class="col-md-2">
+      <label class="form-label fw-semibold">Manufacture Date</label>
+      <input type="date" class="form-control form-control-sm" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Model Year</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+      </select>
+    </div>
+
+    <!-- Permanent Address -->
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Driver Information</h6>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Driver Name</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Akash Parewa</option>
+        <option>Rajesh Joshi</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Shift[A]</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Akash Parewa</option>
+        <option>Rajesh Joshi</option>
+      </select>
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Shift[B]</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Akash Parewa</option>
+        <option>Rajesh Joshi</option>
+      </select>
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Shift[C]</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>Akash Parewa</option>
+        <option>Rajesh Joshi</option>
+      </select>
+    </div>
+
+    <!-- Employment & Account Info -->
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Other Details</h6>
+
+   <div class="col-md-2">
+      <label class="form-label fw-semibold">Invoice No</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Invoice Date</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+
+       <div class="col-md-2">
+      <label class="form-label fw-semibold">Date Of Purchase</label>
+      <input type="number" class="form-control form-control-sm" />
+    </div>
+
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">From Whom Purchased</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>PHED</option>
+        <option>CAD</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Date Of Receive</label>
+      <input type="date" class="form-control form-control-sm" />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">From Whom Received </label>
+      <input type="text" class="form-control form-control-sm" placeholder="XYZ" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Status</label>
+      <select class="form-select form-select-sm">
+        <option value="" disabled selected>-- Select One --</option>
+        <option>IN</option>
+      </select>
+    </div>
+
+
+   <div class="col-md-2">
+      <label class="form-label fw-semibold">Total Cost Paid </label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+
+  <div class="col-md-2">
+      <label class="form-label fw-semibold">Average (KM/Ltr)</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+<div class="col-md-2">
+  <label class="form-label fw-semibold d-block">Vehicle Auction</label>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="averageStatus" id="avgYes" value="true" checked>
+    <label class="form-check-label text-success fw-semibold" for="avgYes">
+      <i class="bi bi-check-circle-fill"></i> Yes
+    </label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="averageStatus" id="avgNo" value="false">
+    <label class="form-check-label text-danger fw-semibold" for="avgNo">
+      <i class="bi bi-x-circle-fill"></i> No
+    </label>
+  </div>
+</div>
+
+
+
+
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Vehicle Card No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+
+    <!-- Education -->
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Permanent Tools Kept in Vehicle </h6>
+  <div class="col-md-2">
+      <label class="form-label fw-semibold">Tool Name</label>
+      <input type="text" class="form-control form-control-sm" placeholder="name" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Quantity</label>
+    <input type="number" class="form-control form-control-sm" placeholder="XX" />
+    </div>
+
+    <h6 class="fw-bold text-primary">Written Off Detail </h6>
+  <div class="col-md-2">
+      <label class="form-label fw-semibold">Order No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Date of Written of</label>
+    <input type="date" class="form-control form-control-sm" />
+    </div>
+
+    <h6 class="fw-bold text-primary">Auction Detail</h6>
+
+     <div class="col-md-2">
+      <label class="form-label fw-semibold">Date of Auction</label>
+    <input type="date" class="form-control form-control-sm" />
+    </div>
+
+  <div class="col-md-2">
+      <label class="form-label fw-semibold">Sale Amount</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXX" />
+    </div>
+
+
+
+
+
+
+    <!-- Buttons -->
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-sm me-2" style="background-color:#040125; border:none;">
+        <i class="bi bi-check-circle"></i> Save
+      </button>
+      <button type="reset" class="btn btn-danger btn-sm me-2" style="background-color:#720303; border:none;">
+        <i class="bi bi-x-circle"></i> Cancel
+      </button>
+      <button type="button" class="btn btn-secondary btn-sm" (click)="goBack()">
+        <i class="bi bi-arrow-left-square"></i> Back
+      </button>
+    </div>
+
+  </form>
+</div>
+
+
+  </div>
+</div>
