@@ -1,0 +1,111 @@
+<div class="container mt-4">
+  <!-- Page Title -->
+  <h3 class="text-center fw-bold text-primary mb-1">
+    <i class="bi bi-buildings"></i> Compapy Registration
+  </h3>
+  <!-- Card: Form -->
+  <div class="card shadow-sm border-0">
+    <div class="card-header bg-primary text-white py-2">
+      <h6 class="mb-0"><i class="bi bi-buildings"></i> Company Details</h6>
+    </div>
+
+    <div class="card-body small">
+      <!-- Centered Form -->
+      <form class="row g-3 ">
+
+        <!-- State Name -->
+ <div class="col-md-3">
+  <label class="form-label fw-semibold d-block">Party Type Name</label>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="averageStatus" id="avgYes" value="true" checked>
+    <label class="form-check-label " for="avgYes"> Service
+    </label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="averageStatus" id="avgNo" value="false">
+    <label class="form-check-label " for="avgNo"> Item
+    </label>
+  </div>
+</div>
+
+
+<div class="col-md-2">
+      <label class="form-label fw-semibold">Party Name</label>
+      <input type="text" class="form-control form-control-sm" placeholder="party name" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Contact Person</label>
+      <input type="number" class="form-control form-control-sm" placeholder="XXXXXXXXXX" />
+    </div>
+    <hr class="mt-4" />
+    <h6 class="fw-bold text-primary">Address Detail</h6>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Phone No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxxxxxxxx" />
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Mobile No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxxxxxxxx" />
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Fax No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+      <div class="col-md-2">
+      <label class="form-label fw-semibold">Email Address</label>
+      <input type="email" class="form-control form-control-sm" placeholder="Xyz@mail.com" />
+    </div>
+   <div class="col-md-2">
+          <label class="form-label fw-semibold">Address 1</label>
+          <textarea class="form-control form-control-sm" rows="2"></textarea>
+        </div>
+
+        <div class="col-md-2">
+          <label class="form-label fw-semibold">Address 2</label>
+          <textarea class="form-control form-control-sm" rows="2"></textarea>
+        </div>
+
+<div class="col-md-2">
+      <label class="form-label fw-semibold">TIN No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">RST No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">CST No.</label>
+      <input type="number" class="form-control form-control-sm" placeholder="xxxx" />
+    </div>
+
+      <!-- Buttons -->
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-sm me-2" style="background-color:#040125; border:none;">
+        <i class="bi bi-check-circle"></i> Save
+      </button>
+      <button type="reset" class="btn btn-danger btn-sm me-2" style="background-color:#720303; border:none;">
+        <i class="bi bi-x-circle"></i> Cancel
+      </button>
+      <button type="button" class="btn btn-secondary btn-sm" (click)="goBack()">
+        <i class="bi bi-arrow-left-square"></i> Back
+      </button>
+    </div>
+
+      </form>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+

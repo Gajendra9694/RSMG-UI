@@ -1,0 +1,200 @@
+<div class="container mt-4">
+  <!-- Page Title -->
+  <h3 class="text-center fw-bold text-primary mb-1">
+    <i class="bi bi-person-badge"></i> LookUP Form
+  </h3>
+
+  <div class="card shadow-sm border-0 mt-3">
+    <div class="card-header bg-primary text-white py-2 d-flex justify-content-between align-items-center">
+      <h6 class="mb-0">
+        <i class="bi bi-info-circle"></i> Look Up Details
+      </h6>
+
+    </div>
+<div class="card-body small">
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label fw-semibold">LookUp Type</label>
+      <input type="text" class="form-control form-control-sm" placeholder="LookUp Type" />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label fw-semibold">Module Name</label>
+      <select class="form-select form-select-sm">
+        <option value="" selected>All</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">Start Date</label>
+      <input type="date" class="form-control form-control-sm" />
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label fw-semibold">End Date</label>
+      <input type="date" class="form-control form-control-sm" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="col-12 text-center mt-3">
+    <button
+      style="background-color:#0e0230; color:white; font-size:12px; padding:4px 16px; border:none; border-radius:4px; cursor:pointer; margin-right:8px;">
+      <i class="bi bi-save"></i> Save
+    </button>
+    <button type="reset"
+      style="background-color:#720303; color:white; font-size:12px; padding:4px 16px; border:none; border-radius:4px; cursor:pointer;">
+      <i class="bi bi-x-circle"></i> Cancel
+    </button>
+  </div>
+  </form>
+</div>
+
+
+  </div>
+
+  <!-- Lookup List Card -->
+<div class="card shadow-sm border-0 mt-4">
+  <!-- Header -->
+  <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+    <h6 class="mb-0 fw-semibold text-primary">
+      <i class="bi bi-list-ul"></i> Lookup List
+    </h6>
+  </div>
+
+  <!-- Body -->
+
+  <div class="card-body small">
+    <!-- Page Size + Search -->
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <!-- Left: Records Dropdown -->
+      <div class="d-flex align-items-center">
+        <select id="pageSize" class="form-select form-select-sm w-auto">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+        <label class="ms-2 mb-0">records</label>
+      </div>
+
+  <!-- Right: Search box -->
+  <div class="input-group input-group-sm shadow-sm" style="max-width: 280px;">
+    <input
+      type="text"
+      id="searchBox"
+      class="form-control border-0"
+      placeholder="Search by Lookup Type or Module..."
+    />
+    <button class="btn btn-outline-primary" type="button">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Table -->
+<div class="table-responsive">
+  <table class="table table-sm table-striped align-middle text-center">
+    <thead class="table-primary">
+      <tr>
+        <th>#</th>
+        <th>Lookup Type</th>
+        <th>Module Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Model</td>
+        <td>All</td>
+        <td>01 Apr 2020</td>
+        <td>31 Mar 2021</td>
+        <td>
+          <button
+            style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button
+            style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>State</td>
+        <td>All</td>
+        <td>01 Apr 2021</td>
+        <td>31 Mar 2022</td>
+        <td>
+          <button
+            style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button
+            style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Role</td>
+        <td>All</td>
+        <td>01 Apr 2022</td>
+        <td>31 Mar 2023</td>
+        <td>
+          <button
+            style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button
+            style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Location</td>
+        <td>All</td>
+        <td>01 Apr 2023</td>
+        <td>31 Mar 2024</td>
+        <td>
+          <button
+            style="background-color:#007bff; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer; margin-right:2px;">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button
+            style="background-color:#dc3545; color:white; font-size:12px; padding:2px 8px; border:none; border-radius:4px; cursor:pointer;">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Pagination -->
+<div class="d-flex justify-content-end mt-2 gap-2">
+  <button
+    style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+    <i class="bi bi-arrow-left-circle"></i> Previous
+  </button>
+  <button
+    style="background-color:#6c757d; color:white; font-size:12px; padding:4px 10px; border:none; border-radius:4px; cursor:pointer;">
+    Next <i class="bi bi-arrow-right-circle"></i>
+  </button>
+</div>
+
+
+  </div>
+</div>
+
+</div>

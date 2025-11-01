@@ -1,0 +1,364 @@
+<!--begin::Sidebar Brand-->
+<div class="sidebar-brand">
+  <!--begin::Brand Link-->
+  <a href="./index.html" class="brand-link">
+    <!--begin::Brand Image-->
+    <img src="./assets/img/RSMGL.png" alt="AdminLTE Logo" class="brand-image opacity-175 shadow" />
+    <!--end::Brand Image-->
+    <!--begin::Brand Text-->
+    <span class="brand-text fw-light">RSMG</span>
+    <!--end::Brand Text-->
+  </a>
+  <!--end::Brand Link-->
+</div>
+<!--end::Sidebar Brand-->
+<!--begin::Sidebar Wrapper-->
+<div class="sidebar-wrapper">
+  <nav class="mt-2">
+    <!--begin::Sidebar Menu-->
+    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="navigation" aria-label="Main navigation"
+      data-accordion="true" id="navigation">
+
+      <li class="nav-header">Store</li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-box-seam-fill"></i>
+          <p>
+            Master
+            <i class="nav-arrow bi bi-chevron-right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a [routerLink]="['/City']" routerLinkActive="active" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>City</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/District']" routerLinkActive="active" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>District</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/FuelRate']" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>FuelRate</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/FuelType']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>FuelType</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/VeicleAvg']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle Average</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/GuestCategory']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Guest Category</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/VehicleStrength']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle Strength</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/AccountOpen']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Account Opening </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/DeptBilling']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Billing Dept </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/Department']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Department </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/SupplierList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Supplier </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a [routerLink]="['/EmployeeList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Employee </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/LookUp']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>LookUp </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/OnPaymentDeptAccount']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>OnPaymentDeptAccount </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/VehicleRateChartList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle Rate Chatrt </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/ItemList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Item </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/ItemGoup']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Item Goup </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/ItemSubGoup']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Item Sub Goup </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/ItemSubSubGoup']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Item Sub Sub Goup </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/Unit']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Unit </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a [routerLink]="['/SupplierType']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Supplier Type</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/OpeningBalance']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Stock Opening Balance</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/Bank']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Bank</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/VehicleList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/VehicleModel']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle Model</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/VehicleType']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Vehicle Type</p>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a [routerLink]="['/Tools']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p> Tools</p>
+            </a>
+          </li>
+ <li class="nav-item">
+            <a [routerLink]="['/CompanyList']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p> Company</p>
+            </a>
+          </li>
+
+ <li class="nav-item">
+            <a [routerLink]="['/AuctionMaster']" class="nav-link" routerLinkActive="active">
+              <i class="nav-icon bi bi-circle"></i>
+              <p> Auction Type</p>
+            </a>
+          </li>
+
+
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-tree-fill"></i>
+          <p>
+            Transaction
+            <i class="nav-arrow bi bi-chevron-right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="./UI/general.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>General</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/icons.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Icons</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/timeline.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Timeline</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-tree-fill"></i>
+          <p>
+            Processing
+            <i class="nav-arrow bi bi-chevron-right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="./UI/general.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>General</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/icons.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Icons</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/timeline.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Timeline</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-tree-fill"></i>
+          <p>
+            Reports
+            <i class="nav-arrow bi bi-chevron-right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="./UI/general.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>General</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/icons.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Icons</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./UI/timeline.html" class="nav-link">
+              <i class="nav-icon bi bi-circle"></i>
+              <p>Timeline</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-header">EXAMPLES</li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-box-arrow-in-right"></i>
+          <p>
+            Auth
+            <i class="nav-arrow bi bi-chevron-right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon bi bi-box-arrow-in-right"></i>
+              <p>
+                Version 1
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./examples/login.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p>Login</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./examples/register.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p>Register</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+
+
+
+
+
+    </ul>
+    <!--end::Sidebar Menu-->
+  </nav>
+</div>
+<!--end::Sidebar Wrapper-->
