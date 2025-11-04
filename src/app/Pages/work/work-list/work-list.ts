@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-work-list',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class WorkList {
 
+  constructor(private router: Router) {}
+
+  AddWork() {
+    this.router.navigate(['/WorkForm']);
+  }
 }
+

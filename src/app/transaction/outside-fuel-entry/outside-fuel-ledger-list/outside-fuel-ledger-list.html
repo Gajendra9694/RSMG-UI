@@ -1,0 +1,111 @@
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+
+        <!-- Header -->
+        <div class="card-header bg-light d-flex align-items-center justify-content-between py-2">
+            <h6 class="mb-0 fw-semibold text-primary">
+                <i class="bi bi-list-ul"></i> Outside Fuel Entry List
+            </h6>
+
+            <!-- Button on the right end -->
+            <div class="ms-auto">
+                <button class="btn btn-sm" (click)="AddOutsideFuel()"
+                    style="background-color:#090250; color:white; font-size:12px; padding:4px 14px; border:none; border-radius:4px;">
+                    <i class="bi bi-droplet-half"></i> Add Outside Fuel
+                </button>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body small" style="font-size:0.85rem;">
+
+            <!-- Controls -->
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                <div class="d-flex align-items-center">
+                    <label class="me-2 mb-0 fw-semibold text-muted">Show</label>
+                    <select id="pageSize" class="form-select form-select-sm w-auto">
+                        <option>5</option>
+                        <option selected>10</option>
+                        <option>20</option>
+                        <option>50</option>
+                    </select>
+                    <label class="ms-2 mb-0 text-muted">records</label>
+                </div>
+
+                <div class="input-group input-group-sm" style="max-width:260px;">
+                    <input type="text" class="form-control" placeholder="Search by Bill No...">
+                    <button class="btn btn-outline-primary">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive" style="max-height: 480px; overflow-x: auto;">
+                <table class="table table-sm table-bordered table-hover align-middle text-nowrap">
+                    <thead class="table-primary sticky-top">
+                        <tr>
+                            <th>#</th>
+                            <th>Comp. Bill No.</th>
+                            <th>Entry Date</th>
+                            <th>Pump Address</th>
+                            <th>Bill No.</th>
+                            <th>Bill Date</th>
+                            <th>Vehicle No</th>
+                            <th>Driver</th>
+                            <th>Petrol (L)</th>
+                            <th>Diesel (L)</th>
+                            <th>Oil (L)</th>
+                            <th>Total Amt</th>
+                            <th>Pay Mode</th>
+                            <th>Status</th>
+                            <th>Is Reject</th>
+                            <th>Come From</th>
+                            <th>Reject</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5750</td>
+                            <td>03 Nov 2025</td>
+                            <td>G LAL FILLING STATION</td>
+                            <td>2792</td>
+                            <td>03 Nov 2025</td>
+                            <td>RJ-14-CD-2025</td>
+                            <td>MALLU SINGH-1484</td>
+                            <td>-</td>
+                            <td>46</td>
+                            <td>-</td>
+                            <td>4217.28</td>
+                            <td>Cash</td>
+                            <td><span class="badge bg-success">Verified</span></td>
+                            <td><span class="badge bg-info text-dark">Live</span></td>
+                            <td>Without Adv</td>
+                            <td><span class="text-danger fw-semibold">Reject</span></td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary me-1" title="Edit">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="d-flex justify-content-end mt-3 gap-2">
+                <button class="btn btn-sm btn-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> Previous
+                </button>
+                <button class="btn btn-sm btn-secondary">
+                    Next <i class="bi bi-arrow-right-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

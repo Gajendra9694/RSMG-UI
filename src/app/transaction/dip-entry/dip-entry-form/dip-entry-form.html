@@ -1,0 +1,140 @@
+<div class="container mt-4">
+    <!-- Page Title -->
+    <h3 class="text-center fw-bold text-primary mb-1">
+        <i class="bi bi-receipt-cutoff"></i> Dip Entry
+    </h3>
+
+
+    <div class="card-body small">
+        <form class="row g-3">
+            <h6 class="fw-bold text-white px-3 py-2 rounded"
+                style="background: linear-gradient(90deg, #003366, #0066cc);">
+                <i class="bi bi-fuel-pump"></i> Fuel Tank
+            </h6>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Dip Entry Date</label>
+                <input type="date" class="form-control form-control-sm ">
+            </div>
+
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Petrol Tank</label>
+                <select class="form-select form-select-sm">
+                    <option>1 / Petrol</option>
+                    <option>2 / Petrol</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Petrol Pump</label>
+                <select class="form-select form-select-sm">
+                    <option>7 / Petrol</option>
+                    <option>8 / Petrol</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Diesel Tank</label>
+                <select class="form-select form-select-sm">
+                    <option>2 / Diesel</option>
+                    <option>3 / Diesel</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Diesel Pump</label>
+                <select class="form-select form-select-sm">
+                    <option>3 / Diesel</option>
+                    <option>4 / Diesel</option>
+                </select>
+            </div>
+
+            <h6 class="fw-bold text-white px-3 py-2 rounded"
+                style="background: linear-gradient(90deg, #003366, #0066cc);">
+                <i class="bi bi-fuel-pump"></i> Petrol
+            </h6>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Balance (Sale)</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly value="10208.89"
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Dip Reading</label>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm ">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        style="padding: 0px 6px; font-weight: bold;">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Balance (Dip)</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly value="0"
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Difference</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Meter Reading</label>
+                <input type="text" class="form-control form-control-sm text-end" readonly value="10208.78">
+            </div>
+
+            <!-- Bill Details Section -->
+         <h6 class="fw-bold text-white px-3 py-2 rounded"
+                style="background: linear-gradient(90deg, #003366, #0066cc);">
+                <i class="bi bi-fuel-pump"></i> Diesel
+            </h6>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Balance (Sale)</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly value="10208.89"
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Dip Reading</label>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm ">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        style="padding: 0px 6px; font-weight: bold;">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Balance (Dip)</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly value="0"
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Difference</label>
+                <input type="number" class="form-control form-control-sm text-end" readonly
+                    style="background-color: #e9ecef; font-weight: bold; color: #212529;">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-semibold">Meter Reading</label>
+                <input type="text" class="form-control form-control-sm text-end" readonly value="10208.78">
+            </div>
+            <!-- Buttons -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary btn-sm me-2" style="background-color:#040125; border:none;">
+                    <i class="bi bi-check-circle"></i> Save
+                </button>
+                <button type="button" class="btn btn-primary btn-sm me-2" onclick="window.print()">
+                    <i class="bi bi-printer me-1"></i> Print
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm" (click)="goBack()">
+                    <i class="bi bi-arrow-left-square"></i> Back
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>

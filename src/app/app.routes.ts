@@ -38,6 +38,17 @@ import { Tools } from './Pages/tools/tools';
 import { CompanyList } from './Pages/company/company-list/company-list';
 import { CompanyReg } from './Pages/company/company-reg/company-reg';
 import { AuctionType } from './Pages/auction-type/auction-type';
+import { WorkList } from './Pages/work/work-list/work-list';
+import { WorkForm } from './Pages/work/work-form/work-form';
+import { SaleEntryForm } from './transaction/sale-entry/sale-entry-form/sale-entry-form';
+import { SaleEntryList } from './transaction/sale-entry/sale-entry-list/sale-entry-list';
+import { DipEntryForm } from './transaction/dip-entry/dip-entry-form/dip-entry-form';
+import { DipEntryList } from './transaction/dip-entry/dip-entry-list/dip-entry-list';
+import { DepartmentAccount } from './transaction/department-account/department-account';
+import { FuelEvaporationList } from './transaction/fuel-evaporation/fuel-evaporation-list/fuel-evaporation-list';
+import { FuelEvaporationForm } from './transaction/fuel-evaporation/fuel-evaporation-form/fuel-evaporation-form';
+import { OutsideFuelLedgerList } from './transaction/outside-fuel-entry/outside-fuel-ledger-list/outside-fuel-ledger-list';
+import { OutsideFuelLedgerForm } from './transaction/outside-fuel-entry/outside-fuel-ledger-form/outside-fuel-ledger-form';
 
 export const routes: Routes = [
   {
@@ -308,6 +319,104 @@ export const routes: Routes = [
           component: AuctionType,
           title: 'Auction'
         }
+
+   ,
+
+        {
+          path: 'WorkList',
+          component: WorkList,
+          title: 'worklist'
+        }
+   ,
+
+        {
+          path: 'WorkForm',
+          component: WorkForm,
+          title: 'workform'
+        }
+   ,
+
+        {
+          path: 'SaleForm',
+          component: SaleEntryForm,
+          title: 'saleForm'
+        }
+
+
+   ,
+
+        {
+          path: 'SaleList',
+          component: SaleEntryList,
+          title: 'saleList'
+        }
+
+
+
+        
+
+   ,
+
+        {
+          path: 'DipEntryList',
+          component: DipEntryList,
+          title: 'dipList'
+        }
+
+
+ ,
+
+        {
+          path: 'DipEntryForm',
+          component: DipEntryForm,
+          title: 'dipForm'
+        }
+
+ ,
+
+        {
+          path: 'DepartmentAcc',
+          component: DepartmentAccount,
+          title: 'departmentAcc'
+        }
+
+
+ ,
+
+        {
+          path: 'FuelEvaporationList',
+          component: FuelEvaporationList,
+          title: 'fuelEvaporationList'
+        }
+
+ ,
+
+        {
+          path: 'FuelEvaporationForm',
+          component: FuelEvaporationForm,
+          title: 'fuelEvaporationForm'
+        }
+
+
+ ,
+
+        {
+          path: 'OutsideFuelList',
+          component: OutsideFuelLedgerList,
+          title: 'outsideFuelList'
+        }
+
+ ,
+
+        {
+          path: 'OutsideFuelForm',
+          component: OutsideFuelLedgerForm,
+          title: 'outsideFuelForm'
+        }
+
+
+
+
 
 
       ]
